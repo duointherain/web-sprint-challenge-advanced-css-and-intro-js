@@ -247,27 +247,27 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 console.log("****task 4 *****")
-function get20s(arr, year){
+// function get20s(arr){
   
-  /* Code here */
-  newArray = [];
-  for (let i = 0; i < arr.length; i++){  
-    if (artists[i].years.includes(year)) {
-      
-      newArray.push(arr[i].name);
-      return newArray;
+//   /* Code here */
+//   newArray = [];
+//   for (let i = 0; i < arr.length; i++){  
+//     if (artists[i].years.includes()) {
+//       if (artist birth 1990 > && death < 2000)
+//       newArray.push(arr[i].name);
+//       return newArray;
 
-    } //if statement
+//     } //if statement
   
   
-  } //for loop
+//   } //for loop
 
-  }// function   
+//   }// function   
 
-  console.log(get20s(artists, 1900));
+//   console.log(get20s(artists));
 
 
-
+// /* split method will take out dash out */
 
 
 
@@ -295,7 +295,7 @@ function removeArtist(array, num) {
     /* code here */
     let index = 0;
     if (index > -1) {
-    array.splice(index, num)
+    array.splice(num, 1)
     return array.length;
     }/* if*/
   }/*function*/
@@ -325,7 +325,7 @@ function addArtist(id, nom, years, genre, nation, bio ){
     
     artists.push({id: id, name: nom, years: years, genre: genre, nationality: nation, bio: bio});
 
-    return(artists[20]);
+    return(artists[19]);
   }
 
 console.log(addArtist(20, 'Max', '1966 - current', 'impressionist', 'American', 'Max primarily paint with watercolor, but has been known to dabble in acrylic. Much of his later work was digital.' ))
@@ -338,18 +338,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 console.log("**** task 7 *****")
-function lotsOfArt(array1, amount){
+function lotsOfArt(array1){
 
   /* Code here */
-  
+  let newArray=[];
   for (let i = 0; i < array1.length; i++){
-    if (array1.paintings >= amount){
+    if (array1[i].paintings >= 100){
         newArray.push(array1[i]);
-        return newArray;
+       
     }
   } 
+  return newArray;
 }
-console.log(lotsOfArt(artists, 100));
+console.log(lotsOfArt(artists));
 // 🎨🎨 STRETCH 🎨🎨//
 
 
