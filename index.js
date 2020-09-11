@@ -343,8 +343,7 @@ function lotsOfArt(array1, amount){
   /* Code here */
   
   for (let i = 0; i < array1.length; i++){
-
-    if (array1.paintings >= 100){
+    if (array1.paintings[i] >= 100){
         newArray.push(array1[i]);
         return newArray;
     }
