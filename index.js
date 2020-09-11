@@ -246,28 +246,28 @@ function getArtistByIndex(array, index) {
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+  // let mash = artists[4].years.split("-"); 
+  // console.log(mash[1]);
+
 console.log("****task 4 *****")
-// function get20s(arr){
-  
-//   /* Code here */
-//   newArray = [];
-//   for (let i = 0; i < arr.length; i++){  
-//     if (artists[i].years.includes()) {
-//       if (artist birth 1990 > && death < 2000)
-//       newArray.push(arr[i].name);
-//       return newArray;
 
-//     } //if statement
-  
-  
-//   } //for loop
+function get20s(arr){
+  /* Code here */
+  newArray = [];
+   for (let i = 0; i < arr.length; i++){ 
+    let mash = arr[i].years.split("-");
+    if (mash >= "1899" && mash <= "2000") {
+    newArray.push(arr[i].name);
+      } //if statement
+     
+    } //for loop
+    return newArray;
+  }
 
-//   }// function   
-
-//   console.log(get20s(artists));
+  console.log(get20s(artists));
 
 
-// /* split method will take out dash out */
+// /* split method will take out dash out   var res = str.split(" ");*/
 
 
 
