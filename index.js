@@ -337,7 +337,7 @@ console.log(addArtist(20, 'Max', '1966 - current', 'impressionist', 'American', 
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-console.log("****task 7 *****")
+console.log("**** task 7 *****")
 function lotsOfArt(array1, amount){
 
   /* Code here */
