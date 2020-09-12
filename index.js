@@ -256,7 +256,8 @@ function get20s(arr){
   newArray = [];
    for (let i = 0; i < arr.length; i++){ 
     let mash = arr[i].years.split("-");
-    if (mash >= "1899" && mash <= "2000") {
+    
+    if (mash >= "1900" && mash <= "2000") {
     newArray.push(arr[i].name);
       } //if statement
      
